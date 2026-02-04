@@ -174,7 +174,7 @@ code --install-extension ms-azuretools.vscode-docker
 
 ```powershell
 git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
+git config --global user.email "Kanjanikumar52@gmail.com"
 git config --global core.editor "code --wait"
 ```
 
@@ -272,4 +272,5 @@ npm install
 - 🐛 See [TROUBLESHOOTING.md](./TROUBLESHOOTING.md) for issues
 - 🔍 Check [ERROR_REFERENCE.md](./ERROR_REFERENCE.md) for error codes
 - 💬 Open a [GitHub Issue](https://github.com/devanjaniraj/developer-environment-setup/issues)
+
 

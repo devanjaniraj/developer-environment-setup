@@ -24,7 +24,7 @@ git config --list
 git config --global user.name "Your Name"
 
 # Set your email
-git config --global user.email "your-email@example.com"
+git config --global user.email "Kanjanikumar52@gmail.com"
 
 # Set default editor
 git config --global core.editor "code --wait"
@@ -588,4 +588,5 @@ git revert <commit-hash>
 - [GitHub Docs](https://docs.github.com/)
 - [Git Branching Model](https://nvie.com/posts/a-successful-git-branching-model/)
 - [Commit Message Guidelines](https://www.conventionalcommits.org/)
+
 

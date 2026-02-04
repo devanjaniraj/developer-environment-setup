@@ -1,4 +1,4 @@
-﻿# 📖 HOW TO PUSH THIS TO GITHUB
+# 📖 HOW TO PUSH THIS TO GITHUB
 
 Follow these exact steps to create and push this repository to GitHub.
 
@@ -64,8 +64,8 @@ git commit -m "Initial commit: Professional Developer Environment Setup"
 ## 🎯 Step 3: Connect to GitHub
 
 ```powershell
-# Replace YOUR_USERNAME with your actual GitHub username
-git remote add origin https://github.com/YOUR_USERNAME/developer-environment-setup.git
+# Replace devanjaniraj with your actual GitHub username
+git remote add origin https://github.com/devanjaniraj/developer-environment-setup.git
 
 # Set main branch
 git branch -M main
@@ -78,7 +78,7 @@ git push -u origin main
 
 ## 🎯 Step 4: Configure Repository Settings (On GitHub Website)
 
-1. Go to your repository: `https://github.com/YOUR_USERNAME/developer-environment-setup`
+1. Go to your repository: `https://github.com/devanjaniraj/developer-environment-setup`
 
 2. Click **Settings** (top right)
 
@@ -107,7 +107,7 @@ Replace these placeholders:
 
 ```powershell
 # Find and replace in README.md
-(Get-Content README.md) -replace 'devanjaniraj', 'YOUR_USERNAME' | Set-Content README.md
+(Get-Content README.md) -replace 'devanjaniraj', 'devanjaniraj' | Set-Content README.md
 (Get-Content README.md) -replace 'dev@devanjaniraj.com', 'your-real-email@example.com' | Set-Content README.md
 (Get-Content README.md) -replace 'https://github.com/devanjaniraj', 'yourwebsite.com' | Set-Content README.md
 ```
@@ -131,7 +131,7 @@ git push
 
 ## ✅ Step 6: Verify on GitHub
 
-1. Visit `https://github.com/YOUR_USERNAME/developer-environment-setup`
+1. Visit `https://github.com/devanjaniraj/developer-environment-setup`
 2. Check that all files are visible
 3. Check that README.md displays properly
 4. Verify **Public** status (visible in repo header)
@@ -143,12 +143,12 @@ git push
 ### Add to GitHub README Badge
 
 ```markdown
-[![Repository](https://img.shields.io/badge/GitHub-developer--environment--setup-blue?logo=github)](https://github.com/YOUR_USERNAME/developer-environment-setup)
+[![Repository](https://img.shields.io/badge/GitHub-developer--environment--setup-blue?logo=github)](https://github.com/devanjaniraj/developer-environment-setup)
 ```
 
 ### Share URL
-- GitHub: `https://github.com/YOUR_USERNAME/developer-environment-setup`
-- Clone command: `git clone https://github.com/YOUR_USERNAME/developer-environment-setup.git`
+- GitHub: `https://github.com/devanjaniraj/developer-environment-setup`
+- Clone command: `git clone https://github.com/devanjaniraj/developer-environment-setup.git`
 
 ### Social Media
 Tweet something like:
@@ -211,7 +211,7 @@ git push
 git init
 git add .
 git commit -m "Initial commit"
-git remote add origin https://github.com/YOUR_USERNAME/developer-environment-setup.git
+git remote add origin https://github.com/devanjaniraj/developer-environment-setup.git
 git branch -M main
 git push -u origin main
 
@@ -295,4 +295,5 @@ Congratulations! Your GitHub repository is now live and public. 🎉
 ---
 
 **Happy sharing!** 🚀
+
 

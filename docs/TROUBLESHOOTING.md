@@ -293,7 +293,7 @@ pip install docker-compose
 **For SSH**:
 ```powershell
 # Generate SSH key
-ssh-keygen -t ed25519 -C "your-email@example.com"
+ssh-keygen -t ed25519 -C "Kanjanikumar52@gmail.com"
 
 # Add to SSH agent
 ssh-add $env:USERPROFILE\.ssh\id_ed25519
@@ -528,4 +528,5 @@ nslookup registry.npmjs.org
 2. Check [ERROR_REFERENCE.md](./ERROR_REFERENCE.md) for error codes
 3. Open a [GitHub Issue](https://github.com/devanjaniraj/developer-environment-setup/issues)
 4. Start a [GitHub Discussion](https://github.com/devanjaniraj/developer-environment-setup/discussions)
+
 

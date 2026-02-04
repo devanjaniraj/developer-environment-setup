@@ -6,7 +6,7 @@ Get your development environment ready in 15 minutes!
 
 ### Step 1: Clone Repository
 ```powershell
-git clone https://github.com/yourusername/developer-environment-setup.git
+git clone https://github.com/devanjaniraj/developer-environment-setup.git
 cd developer-environment-setup
 ```
 
@@ -188,3 +188,4 @@ See [Troubleshooting Guide](../docs/TROUBLESHOOTING.md) for more help.
 4. ✅ Start building!
 
 Good luck! 🚀
+
