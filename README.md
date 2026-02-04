@@ -1,4 +1,4 @@
-# 🚀 Professional Developer Environment Setup
+﻿# 🚀 Professional Developer Environment Setup
 
 > **A Complete, Production-Ready Development Environment for Solo Entrepreneurs & Teams**
 
@@ -60,7 +60,7 @@ This repository provides a **complete, battle-tested development environment set
 
 **Step 1: Clone this repository**
 ```powershell
-git clone https://github.com/yourusername/developer-environment-setup.git
+git clone https://github.com/devanjaniraj/developer-environment-setup.git
 cd developer-environment-setup
 ```
 
@@ -234,14 +234,14 @@ docker-compose logs -f postgres
 ```powershell
 # Initialize repository
 git init
-git config user.email "your-email@example.com"
+git config user.email "dev@devanjaniraj.com"
 
 # Make first commit
 git add .
 git commit -m "Initial commit"
 
 # Push to GitHub
-git remote add origin https://github.com/yourusername/your-repo.git
+git remote add origin https://github.com/devanjaniraj/your-repo.git
 git branch -M main
 git push -u origin main
 ```
@@ -254,7 +254,7 @@ git push -u origin main
 
 ```powershell
 # 1. Clone repository
-git clone https://github.com/yourusername/developer-environment-setup.git
+git clone https://github.com/devanjaniraj/developer-environment-setup.git
 cd developer-environment-setup
 
 # 2. Run setup script
@@ -459,10 +459,10 @@ Check these first:
 - [FAQ](./docs/FAQ.md)
 
 ### GitHub Issues
-Found a bug or have a suggestion? [Open an issue](https://github.com/yourusername/developer-environment-setup/issues)
+Found a bug or have a suggestion? [Open an issue](https://github.com/devanjaniraj/developer-environment-setup/issues)
 
 ### GitHub Discussions
-Have questions or want to discuss? [Start a discussion](https://github.com/yourusername/developer-environment-setup/discussions)
+Have questions or want to discuss? [Start a discussion](https://github.com/devanjaniraj/developer-environment-setup/discussions)
 
 ---
 
@@ -497,9 +497,9 @@ Built with ❤️ for solo entrepreneurs and professional developers.
 
 ## 📞 Contact & Support
 
-- 📧 **Email**: your-email@example.com
-- 🐙 **GitHub**: [@yourusername](https://github.com/yourusername)
-- 🌐 **Website**: your-website.com
+- 📧 **Email**: dev@devanjaniraj.com
+- 🐙 **GitHub**: [@devanjaniraj](https://github.com/devanjaniraj)
+- 🌐 **Website**: https://github.com/devanjaniraj
 
 ---
 
@@ -515,3 +515,4 @@ Built with ❤️ for solo entrepreneurs and professional developers.
 *Status: Production Ready ✅*
 
 </div>
+

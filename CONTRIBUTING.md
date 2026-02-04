@@ -1,4 +1,4 @@
-# Contributing to Professional Developer Environment Setup
+﻿# Contributing to Professional Developer Environment Setup
 
 Thank you for your interest in contributing! This document provides guidelines and instructions for contributing to this project.
 
@@ -9,8 +9,8 @@ Be respectful, inclusive, and constructive in all interactions.
 ## 🚀 How to Contribute
 
 ### Report Bugs
-1. Check if the bug is already reported in [Issues](https://github.com/yourusername/developer-environment-setup/issues)
-2. If not, [create a new issue](https://github.com/yourusername/developer-environment-setup/issues/new)
+1. Check if the bug is already reported in [Issues](https://github.com/devanjaniraj/developer-environment-setup/issues)
+2. If not, [create a new issue](https://github.com/devanjaniraj/developer-environment-setup/issues/new)
 3. Include:
    - Clear title and description
    - Steps to reproduce
@@ -18,7 +18,7 @@ Be respectful, inclusive, and constructive in all interactions.
    - Your system information (Windows version, etc.)
 
 ### Suggest Enhancements
-1. [Open a new issue](https://github.com/yourusername/developer-environment-setup/issues/new)
+1. [Open a new issue](https://github.com/devanjaniraj/developer-environment-setup/issues/new)
 2. Label it as `enhancement`
 3. Describe:
    - What you want to achieve
@@ -82,10 +82,11 @@ Before submitting a PR:
 
 ## 📞 Questions?
 
-- Open an [issue](https://github.com/yourusername/developer-environment-setup/issues)
-- Start a [discussion](https://github.com/yourusername/developer-environment-setup/discussions)
-- Email: your-email@example.com
+- Open an [issue](https://github.com/devanjaniraj/developer-environment-setup/issues)
+- Start a [discussion](https://github.com/devanjaniraj/developer-environment-setup/discussions)
+- Email: dev@devanjaniraj.com
 
 ---
 
 Thank you for contributing! ❤️
+

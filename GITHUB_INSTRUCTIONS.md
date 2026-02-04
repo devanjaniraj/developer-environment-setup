@@ -1,4 +1,4 @@
-# 📖 HOW TO PUSH THIS TO GITHUB
+﻿# 📖 HOW TO PUSH THIS TO GITHUB
 
 Follow these exact steps to create and push this repository to GitHub.
 
@@ -101,15 +101,15 @@ git push -u origin main
 ### Update README.md
 
 Replace these placeholders:
-- `yourusername` → Your GitHub username
-- `your-email@example.com` → Your actual email
+- `devanjaniraj` → Your GitHub username
+- `dev@devanjaniraj.com` → Your actual email
 - `Your Name / Your Organization` → Your name
 
 ```powershell
 # Find and replace in README.md
-(Get-Content README.md) -replace 'yourusername', 'YOUR_USERNAME' | Set-Content README.md
-(Get-Content README.md) -replace 'your-email@example.com', 'your-real-email@example.com' | Set-Content README.md
-(Get-Content README.md) -replace 'your-website.com', 'yourwebsite.com' | Set-Content README.md
+(Get-Content README.md) -replace 'devanjaniraj', 'YOUR_USERNAME' | Set-Content README.md
+(Get-Content README.md) -replace 'dev@devanjaniraj.com', 'your-real-email@example.com' | Set-Content README.md
+(Get-Content README.md) -replace 'https://github.com/devanjaniraj', 'yourwebsite.com' | Set-Content README.md
 ```
 
 ### Update LICENSE
@@ -264,11 +264,11 @@ git push
 ```powershell
 # Configure for this repository
 git config user.name "Your Name"
-git config user.email "your-email@example.com"
+git config user.email "dev@devanjaniraj.com"
 
 # Or configure globally
 git config --global user.name "Your Name"
-git config --global user.email "your-email@example.com"
+git config --global user.email "dev@devanjaniraj.com"
 ```
 
 ---
@@ -295,3 +295,4 @@ Congratulations! Your GitHub repository is now live and public. 🎉
 ---
 
 **Happy sharing!** 🚀
+
