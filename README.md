@@ -2,6 +2,8 @@
 
 > **A Complete, Production-Ready Development Environment for Solo Entrepreneurs & Teams**
 
+> **By Anjani Raj** — *Engineer by instinct. Entrepreneur by action.*
+
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Windows](https://img.shields.io/badge/Platform-Windows-0078D4?logo=windows)](https://www.microsoft.com/en-us/windows)
 [![Last Updated](https://img.shields.io/badge/Updated-Feb%202026-blue)](https://github.com)
@@ -497,9 +499,12 @@ Built with ❤️ for solo entrepreneurs and professional developers.
 
 ## 📞 Contact & Support
 
-- 📧 **Email**: dev@devanjaniraj.com
+- 📧 **Email**: [Kanjanikumar52@gmail.com](mailto:Kanjanikumar52@gmail.com)
 - 🐙 **GitHub**: [@devanjaniraj](https://github.com/devanjaniraj)
-- 🌐 **Website**: https://github.com/devanjaniraj
+- 💼 **LinkedIn**: [Anjani Raj](https://www.linkedin.com/in/anjaniraj)
+- 💬 **Discord**: [Connect on Discord](https://discordapp.com/users/1125265439564513315)
+- 📱 **WhatsApp**: [Message on WhatsApp](https://wa.me/message/FAT7HKT4JDBVJ1)
+- 🌐 **Website**: [anjaniraj.live](https://anjaniraj.live)
 
 ---
 
