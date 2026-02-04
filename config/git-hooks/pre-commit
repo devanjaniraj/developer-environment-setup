@@ -1,0 +1,57 @@
+#!/bin/sh
+# Pre-commit hook for Node.js projects
+# Runs linting, formatting, and tests before commit
+
+echo "🔍 Running pre-commit checks..."
+
+# Check if node_modules exists
+if [ ! -d "node_modules" ]; then
+  echo "❌ node_modules not found. Please run 'npm install' first."
+  exit 1
+fi
+
+# Run ESLint
+echo "📝 Running ESLint..."
+npm run lint
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint found errors. Please fix them before committing."
+  exit 1
+fi
+
+# Run Prettier
+echo "💅 Running Prettier..."
+npm run format:check
+if [ $? -ne 0 ]; then
+  echo "❌ Code formatting issues found. Run 'npm run format' to fix."
+  exit 1
+fi
+
+# Run TypeScript type check
+if [ -f "tsconfig.json" ]; then
+  echo "🔷 Running TypeScript type check..."
+  npm run type-check
+  if [ $? -ne 0 ]; then
+    echo "❌ TypeScript type errors found. Please fix them."
+    exit 1
+  fi
+fi
+
+# Run tests
+echo "🧪 Running tests..."
+npm test -- --passWithNoTests
+if [ $? -ne 0 ]; then
+  echo "❌ Tests failed. Please fix failing tests."
+  exit 1
+fi
+
+# Check for console.log statements
+echo "🔍 Checking for console.log statements..."
+git diff --cached --name-only --diff-filter=ACM | grep '\.tsx\?$' | while read file; do
+  if git show ":$file" | grep -q 'console\.log'; then
+    echo "❌ Found console.log in $file. Please remove before committing."
+    exit 1
+  fi
+done
+
+echo "✅ All pre-commit checks passed!"
+echo "📦 Proceeding with commit..."

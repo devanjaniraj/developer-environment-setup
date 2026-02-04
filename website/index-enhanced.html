@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Developer Environment Setup - Complete development environment for solo entrepreneurs and developers">
+    <meta name="keywords" content="developer setup, environment, development, starter, guides, templates">
+    <meta name="og:title" content="Professional Developer Environment Setup">
+    <meta name="og:description" content="Complete, production-ready development environment. Get started in 5 minutes.">
+    <meta name="og:type" content="website">
+    <title>Professional Developer Environment Setup | Dev Setup Pro</title>
+    <link rel="stylesheet" href="styles-enhanced.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#home" class="nav-brand">
+                <i class="fas fa-code"></i>
+                <span>Dev Setup Pro</span>
+            </a>
+            <ul class="nav-menu">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#setup">Setup</a></li>
+                <li><a href="#templates">Templates</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://github.com/devanjaniraj/developer-environment-setup" target="_blank" class="btn btn-primary">
+                    <i class="fab fa-github"></i> GitHub
+                </a></li>
+                <button class="theme-toggle" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </ul>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Professional Developer Environment Setup</h1>
+                <p class="hero-subtitle">Complete, production-ready development environment for solo entrepreneurs & teams. Get started in 5 minutes.</p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <i class="fas fa-download"></i>
+                        <span>1000+ Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-star"></i>
+                        <span>50+ Stars</span>
+                    </div>
+                    <div class="stat">
+                        <i class="fas fa-users"></i>
+                        <span>Active Community</span>
+                    </div>
+                </div>
+                <div class="cta-buttons">
+                    <button class="btn btn-primary btn-lg" onclick="startSetup()">
+                        <i class="fas fa-rocket"></i> Start Setup Wizard
+                    </button>
+                    <a href="#quick-start" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-book"></i> Quick Start Guide
+                    </a>
+                </div>
+            </div>
+            <div class="hero-animation">
+                <div class="terminal-window">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                    </div>
+                    <div class="terminal-body" id="terminalOutput">
+                        <div class="terminal-line">$ git clone https://github.com/devanjaniraj/developer-environment-setup.git</div>
+                        <div class="terminal-line">$ cd developer-environment-setup</div>
+                        <div class="terminal-line">$ ./scripts/setup.ps1</div>
+                        <div class="terminal-line typing">Installing tools... ✓</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title">✨ Everything You Need</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-code feature-icon"></i>
+                    <h3>Multi-Language</h3>
+                    <p>Node.js, Python, Go, Rust, Java, .NET</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-database feature-icon"></i>
+                    <h3>5 Database Stack</h3>
+                    <p>PostgreSQL, MongoDB, Redis, MySQL, Elasticsearch</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bolt feature-icon"></i>
+                    <h3>5-Minute Setup</h3>
+                    <p>Fully automated installation</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fab fa-docker feature-icon"></i>
+                    <h3>Docker Ready</h3>
+                    <p>Containerization configured</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-puzzle-piece feature-icon"></i>
+                    <h3>50+ Extensions</h3>
+                    <p>Curated VS Code extensions</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-code feature-icon"></i>
+                    <h3>Project Templates</h3>
+                    <p>Express, FastAPI, React, Next.js, Vue, Django</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-book-open feature-icon"></i>
+                    <h3>100+ Pages Docs</h3>
+                    <p>Complete guides and troubleshooting</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h3>Open Source</h3>
+                    <p>MIT licensed, free forever</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Setup Wizard -->
+    <section class="setup-wizard" id="setup">
+        <div class="container">
+            <h2 class="section-title">🚀 Interactive Setup Wizard</h2>
+            <div class="wizard-container" id="wizardContainer">
+                <div class="wizard-step active" data-step="1">
+                    <h3><i class="fas fa-laptop"></i> Select Your Platform</h3>
+                    <div class="platform-options">
+                        <button class="platform-btn selected" data-platform="windows">
+                            <i class="fab fa-windows"></i>
+                            <span>Windows 10/11</span>
+                        </button>
+                        <button class="platform-btn" data-platform="macos">
+                            <i class="fab fa-apple"></i>
+                            <span>macOS</span>
+                        </button>
+                        <button class="platform-btn" data-platform="linux">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="wizard-step" data-step="2">
+                    <h3><i class="fas fa-code-branch"></i> Choose Your Languages</h3>
+                    <div class="language-options">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="nodejs" checked>
+                            <span><i class="fab fa-node-js"></i> Node.js</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="python" checked>
+                            <span><i class="fab fa-python"></i> Python</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="go">
+                            <span><i class="fab fa-golang"></i> Go</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="rust">
+                            <span><i class="fas fa-cog"></i> Rust</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="java">
+                            <span><i class="fab fa-java"></i> Java</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="language" value="dotnet">
+                            <span><i class="fas fa-window-maximize"></i> .NET</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wizard-step" data-step="3">
+                    <h3><i class="fas fa-database"></i> Select Databases</h3>
+                    <div class="language-options">
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="database" value="postgresql" checked>
+                            <span><i class="fas fa-database"></i> PostgreSQL</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="database" value="mongodb" checked>
+                            <span><i class="fas fa-leaf"></i> MongoDB</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="database" value="redis">
+                            <span><i class="fas fa-bolt"></i> Redis</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="database" value="mysql">
+                            <span><i class="fas fa-dolphin"></i> MySQL</span>
+                        </label>
+                        <label class="checkbox-card">
+                            <input type="checkbox" name="database" value="elasticsearch">
+                            <span><i class="fas fa-search"></i> Elasticsearch</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="wizard-step" data-step="4">
+                    <h3><i class="fas fa-download"></i> Installation Instructions</h3>
+                    <div class="installation-output" id="installationOutput">
+                        <p>Loading your custom setup instructions...</p>
+                    </div>
+                    <button class="btn btn-primary" onclick="copyInstructions()">
+                        <i class="fas fa-copy"></i> Copy Commands
+                    </button>
+                </div>
+                <div class="wizard-navigation">
+                    <button class="btn btn-secondary" id="prevBtn" onclick="changeStep(-1)" disabled>
+                        <i class="fas fa-arrow-left"></i> Previous
+                    </button>
+                    <div class="wizard-dots" id="wizardDots"></div>
+                    <button class="btn btn-primary" id="nextBtn" onclick="changeStep(1)">
+                        Next <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Templates Section -->
+    <section class="templates" id="templates">
+        <div class="container">
+            <h2 class="section-title">📦 Project Templates</h2>
+            <div class="templates-grid">
+                <div class="template-card">
+                    <i class="fab fa-node-js" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>Express.js API</h3>
+                    <p>REST API with TypeScript, ESLint, Prettier</p>
+                    <span class="badge">Free</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+                <div class="template-card">
+                    <i class="fab fa-python" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>FastAPI</h3>
+                    <p>Python REST API with async support</p>
+                    <span class="badge">Free</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+                <div class="template-card">
+                    <i class="fab fa-react" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>React App</h3>
+                    <p>Modern React with hooks and routing</p>
+                    <span class="badge">Free</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+                <div class="template-card">
+                    <i class="fas fa-bolt" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>Next.js</h3>
+                    <p>React with SSR and API routes</p>
+                    <span class="badge" style="background: var(--accent-color);">NEW</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+                <div class="template-card">
+                    <i class="fab fa-vuejs" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>Vue.js</h3>
+                    <p>Vue 3 with Composition API</p>
+                    <span class="badge" style="background: var(--accent-color);">NEW</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+                <div class="template-card">
+                    <i class="fab fa-python" style="font-size: 2rem; color: var(--accent-color); margin-bottom: 10px;"></i>
+                    <h3>Django</h3>
+                    <p>Full-featured web framework</p>
+                    <span class="badge" style="background: var(--accent-color);">NEW</span>
+                    <a href="#" class="btn btn-sm btn-primary" style="margin-top: 10px;">Use Template</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">💬 Get In Touch</h2>
+            <div style="max-width: 600px; margin: 0 auto;">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="How can we help?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        <i class="fas fa-send"></i> Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter" id="newsletter" style="background: linear-gradient(135deg, var(--primary-color), var(--accent-color)); padding: 60px 0; margin-top: 100px;">
+        <div class="container">
+            <h2 style="color: white; text-align: center; margin-bottom: 30px; font-size: 2rem;">📬 Subscribe to Updates</h2>
+            <div style="max-width: 500px; margin: 0 auto;">
+                <form id="newsletterForm">
+                    <div style="display: flex; gap: 10px;">
+                        <input type="email" name="email" required placeholder="Enter your email" style="flex: 1; padding: 12px; border-radius: 8px; border: none;">
+                        <button type="submit" class="btn btn-secondary" style="color: white; border-color: white;">Subscribe</button>
+                    </div>
+                </form>
+                <p style="color: rgba(255,255,255,0.8); text-align: center; margin-top: 15px; font-size: 0.9rem;">Get updates, tips, and exclusive content delivered to your inbox</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: var(--secondary-color); padding: 60px 0; border-top: 1px solid var(--border-color); margin-top: 100px;">
+        <div class="container">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 40px;">
+                <div>
+                    <h4 style="margin-bottom: 15px;">Developer Environment Setup</h4>
+                    <p style="opacity: 0.8;">Complete development environment for solo entrepreneurs and developers.</p>
+                    <div style="display: flex; gap: 15px; margin-top: 15px;">
+                        <a href="https://github.com/devanjaniraj" style="color: var(--primary-color); transition: var(--transition);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--primary-color)'">
+                            <i class="fab fa-github fa-lg"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/anjaniraj" style="color: var(--primary-color); transition: var(--transition);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--primary-color)'">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com" style="color: var(--primary-color); transition: var(--transition);" onmouseover="this.style.color='var(--accent-color)'" onmouseout="this.style.color='var(--primary-color)'">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 15px;">Quick Links</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="#features" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Features</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#setup" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Setup Wizard</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#templates" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Templates</a></li>
+                        <li style="margin-bottom: 10px;"><a href="#contact" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 style="margin-bottom: 15px;">Resources</h4>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 10px;"><a href="https://github.com/devanjaniraj/developer-environment-setup/blob/main/docs/INSTALLATION_GUIDE.md" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Installation Guide</a></li>
+                        <li style="margin-bottom: 10px;"><a href="https://github.com/devanjaniraj/developer-environment-setup/blob/main/docs/FAQ.md" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">FAQ</a></li>
+                        <li style="margin-bottom: 10px;"><a href="https://github.com/devanjaniraj/developer-environment-setup/blob/main/CONTRIBUTING.md" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">Contributing</a></li>
+                        <li style="margin-bottom: 10px;"><a href="https://github.com/devanjaniraj/developer-environment-setup/blob/main/LICENSE" style="color: var(--text-color); text-decoration: none; transition: var(--transition);" onmouseover="this.style.color='var(--primary-color)'" onmouseout="this.style.color='var(--text-color)'">License</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align: center; border-top: 1px solid var(--border-color); padding-top: 30px; opacity: 0.8;">
+                <p>&copy; 2026 Anjani Raj. Licensed under MIT License.</p>
+                <p>Made with ❤️ for Developers</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script-enhanced.js"></script>
+</body>
+</html>
