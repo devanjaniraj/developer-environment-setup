@@ -1,4 +1,4 @@
-﻿# 🚀 Professional Developer Environment Setup
+# 🚀 Professional Developer Environment Setup
 
 > **A Complete, Production-Ready Development Environment for Solo Entrepreneurs & Teams**
 
@@ -92,6 +92,7 @@ The script will install and configure everything automatically.
 **Step 4: Restart PowerShell**
 ```p🌐 Interactive Website
 - [Website](./website/index.html) - Interactive setup wizard
+- **Live Website**: https://devanjaniraj.github.io/developer-environment-setup/
 - Modern UI with platform selector
 - Step-by-step installation guide
 - Template showcase
@@ -571,4 +572,5 @@ Built with ❤️ for solo entrepreneurs and professional developers.
 *Status: Production Ready ✅*
 
 </div>
+
 
